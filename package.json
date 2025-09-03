@@ -1,0 +1,9 @@
+{
+  "name": "knn-regression-demo",
+  "version": "1.0.0",
+  "description": "K-Nearest Neighbor Regression Web Demo",
+  "main": "public/app.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC"
+}

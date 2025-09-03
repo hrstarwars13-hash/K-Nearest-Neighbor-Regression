@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K-Nearest Neighbor Regression Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f8f9fa; margin: 0; padding: 0; }
+    .container { max-width: 700px; margin: 40px auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 24px; }
+    h1 { text-align: center; }
+    #controls { display: flex; justify-content: center; gap: 16px; margin-bottom: 16px; }
+    #canvas { display: block; margin: 0 auto; background: #e9ecef; border-radius: 8px; box-shadow: 0 1px 4px #0002; }
+    button, select { font-size: 1rem; padding: 6px 16px; border-radius: 4px; border: 1px solid #bbb; background: #f1f3f4; cursor: pointer; }
+    button:active { background: #e2e6ea; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>K-Nearest Neighbor Regression</h1>
+    <div id="controls">
+      <label for="k">k: </label>
+      <select id="k">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+      </select>
+      <button id="classify">Classify</button>
+      <button id="reset">Reset</button>
+    </div>
+    <canvas id="canvas" width="600" height="400"></canvas>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
